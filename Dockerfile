@@ -6,6 +6,6 @@ WORKDIR /nodeimage
 COPY package.json /nodeimage
 RUN npm install
 COPY . /nodeimage
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["node", "app.js"]
